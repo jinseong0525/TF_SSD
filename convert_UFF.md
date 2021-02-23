@@ -94,6 +94,6 @@ user@user-desktop:/usr/src/tensorrt/bin$ sudo ./sample_uff_ssd
 ## engine
 /usr/src/tensorrt/data/ssd/sample_ssd_relu6.uff
 ->
-~/jetson-inference/build/aarch64/bin/networks/SSD-Inception-v2/ssd_inception_v2-coco.uff
+~/jetson-inference/build/aarch64/bin/networks/SSD-Inception-v2/ssd_inception_v2-coco.uff  
 if there is origin uff, engine file, rename to another thing
 
