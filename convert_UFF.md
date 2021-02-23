@@ -61,6 +61,9 @@ sudo make
 cd /usr/src/tensorrt/bin/
 ```
 ```
+user@user-desktop:/usr/src/tensorrt/samples/sampleUffSSD$ sudo cp ./frozen_inference_graph.uff /usr/src/tensorrt/data/ssd/sample_ssd_relu6.uff
+
+
 user@user-desktop:/usr/src/tensorrt/bin$ sudo cp ~/Downloads/ssd_inception_v2_coco_2017_11_17/frozen_inference_graph.uff ../data/ssd/sample_ssd_relu6.uff
 
 user@user-desktop:/usr/src/tensorrt/bin$ sudo ./sample_uff_ssd
@@ -89,4 +92,10 @@ user@user-desktop:/usr/src/tensorrt/bin$ sudo ./sample_uff_ssd
 427 line
 
     params.visualThreshold = 0.5;
+    
+## engine
+/usr/src/tensorrt/data/ssd/sample_ssd_relu6.uff
+->
+~/jetson-inference/build/aarch64/bin/networks/SSD-Inception-v2/ssd_inception_v2-coco.uff
+if there is origin uff, engine file, rename to another thing
 
