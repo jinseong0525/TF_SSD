@@ -4,15 +4,20 @@
 1. UFF 툴킷과 그래프 surgeon
 ( https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html#installing ).
 
+```
 git clone https://github.com/katebrighteyes/StartDL_Jetson   
 cd StartDL_Jetson   
 sudo chmod 777 *.sh   
+```
 
+```
 ./install_tensorflow_1.x.sh
-
+```
+```
 UFF_PATH="$(python3 -c 'import uff; print(uff.__path__[0])')"
 sudo chmod +x ${UFF_PATH}/bin/convert_to_uff.py
 sudo ln -sf ${UFF_PATH}/bin/convert_to_uff.py /usr/local/bin/convert-to-uff
+```
 
 
 2. [ssd_inception_v2_coco TensorFlow 학습 모델 다운로드]
