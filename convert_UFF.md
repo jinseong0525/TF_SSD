@@ -69,28 +69,28 @@ user@user-desktop:/usr/src/tensorrt/bin$ sudo ./sample_uff_ssd
 
 ```
 
-2. trained my model 
-```
-user@user-desktop:~/Downloads/pbfiles$ cp /usr/src/tensorrt/samples/sampleUffSSD/config.py ./
-user@user-desktop:~/Downloads/pbfiles$ convert-to-uff frozen_inference_graph.pb -O NMS -p config.py
+~~2. trained my model ~~
+
+~~user@user-desktop:~/Downloads/pbfiles$ cp /usr/src/tensorrt/samples/sampleUffSSD/config.py ./~~
+~~user@user-desktop:~/Downloads/pbfiles$ convert-to-uff frozen_inference_graph.pb -O NMS -p config.py~~
 
 
-user@user-desktop:/usr/src/tensorrt/data/ssd$ cd ../../samples/
-user@user-desktop:/usr/src/tensorrt/samples$ sudo make
+~~user@user-desktop:/usr/src/tensorrt/data/ssd$ cd ../../samples/~~
+~~user@user-desktop:/usr/src/tensorrt/samples$ sudo make~~
 
 
-user@user-desktop:/usr/src/tensorrt/bin$ sudo rm *.ppm
-user@user-desktop:/usr/src/tensorrt/bin$ sudo cp ~/Downloads/pbfiles/frozen_inference_graph.uff ../data/ssd/sample_ssd_relu6.uff
-user@user-desktop:/usr/src/tensorrt/bin$ sudo ./sample_uff_ssd
+~~user@user-desktop:/usr/src/tensorrt/bin$ sudo rm *.ppm~~
+~~user@user-desktop:/usr/src/tensorrt/bin$ sudo cp ~/Downloads/pbfiles/frozen_inference_graph.uff ../data/ssd/sample_ssd_relu6.uff~~
+~~user@user-desktop:/usr/src/tensorrt/bin$ sudo ./sample_uff_ssd~~
 
 
-/usr/src/tensorrt/samples/sampleUffSSD$ sudo vim sampleUffSSD.cpp 
-```
+~~/usr/src/tensorrt/samples/sampleUffSSD$ sudo vim sampleUffSSD.cpp ~~
 
-427 line
+~~427 line~~
 
-    params.visualThreshold = 0.5;
-    
+~~params.visualThreshold = 0.5;~~
+
+
 ## engine
 1) move uff file (if there is origin uff, engine file, rename to another thing)
 ```
