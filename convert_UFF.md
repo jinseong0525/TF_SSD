@@ -63,12 +63,10 @@ cd /usr/src/tensorrt/bin/
 ```
 user@user-desktop:/usr/src/tensorrt/samples/sampleUffSSD$ sudo cp ./frozen_inference_graph.uff /usr/src/tensorrt/data/ssd/sample_ssd_relu6.uff
 
-
-user@user-desktop:/usr/src/tensorrt/bin$ sudo cp ~/Downloads/ssd_inception_v2_coco_2017_11_17/frozen_inference_graph.uff ../data/ssd/sample_ssd_relu6.uff
+#user@user-desktop:/usr/src/tensorrt/bin$ sudo cp ~/Downloads/ssd_inception_v2_coco_2017_11_17/frozen_inference_graph.uff ../data/ssd/sample_ssd_relu6.uff
 
 user@user-desktop:/usr/src/tensorrt/bin$ sudo ./sample_uff_ssd
 
-sudo ./sample_uff_ssd 
 ```
 
 2. trained my model 
