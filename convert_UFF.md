@@ -4,9 +4,9 @@
 1. UFF 툴킷과 그래프 surgeon
 ( https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html#installing ).
 
-git clone https://github.com/katebrighteyes/StartDL_Jetson
-cd StartDL_Jetson
-sudo chmod 777 *.sh
+git clone https://github.com/katebrighteyes/StartDL_Jetson   
+cd StartDL_Jetson   
+sudo chmod 777 *.sh   
 
 ./install_tensorflow_1.x.sh
 
